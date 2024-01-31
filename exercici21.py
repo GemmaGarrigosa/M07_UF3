@@ -7,7 +7,7 @@ for num in llista_numeros:
     contador+=1
 
 
-
+mitjana = suma_numeros / contador
 print(f"Números de l'usuari:{llista_numeros}")
 print(f'Suma total: {suma_numeros}')
-print(f'Mitjana: {suma_numeros / contador}')
+print(f'Mitjana: {mitjana}')
