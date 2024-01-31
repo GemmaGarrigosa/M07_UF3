@@ -1,5 +1,4 @@
 llista_nombres = []
-
 while True:
     nombres = input('Introdueix els nombres que vulguis (per acabar posa un 0:')
     nombres = nombres.split()
@@ -10,5 +9,5 @@ while True:
 
     if 0 in llista_nombres:
         break #si hi ha un 0 s'acaba
-    tupla =  tuple(sorted(llista_nombres))
+    tupla =tuple(sorted(llista_nombres))
     print(tupla)
