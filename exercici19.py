@@ -14,3 +14,4 @@ print(f"Llista amb pati interior afegit: {areas_pis[0:]}")
 print(f"Tota l'àrea del pis: {sum(areas_pis[1::2])}")
 
 
+
