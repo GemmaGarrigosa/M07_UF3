@@ -51,7 +51,7 @@ class Vehicle:
     def set_preu(self,preu):
         self.preu = preu
 
-    def nom_parts(self):
+    def parts(self):
         print(f'Marca: {self.marca}')
         print(f'Color: {self.color}')
         print(f'Nº Portes: {self.num_portes}')
@@ -74,4 +74,4 @@ class Vehicle:
 
 cotxe = Vehicle('BMW', 'Blau', '4', 200, 130, 100000)
 
-cotxe.nom_parts()
+cotxe.parts()
