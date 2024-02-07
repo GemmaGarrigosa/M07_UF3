@@ -1,4 +1,4 @@
-import connection
+from connection import *
 
 #Creem la taula de pokemons a la BD
 # id, nom , tipus1, tipus2, pes, mida
