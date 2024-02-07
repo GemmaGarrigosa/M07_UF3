@@ -1,19 +1,10 @@
 import psycopg2
 
-from connection import *
-resposta = input('Vols connectar amb la base de dades? (si/no)')
+import connection
 
-if resposta == 'si':
+def crear_taula():
     try:
-            conn = psycopg2.connect(
-                database="practica2",
-                user="gemma",
-                password="system",
-                host="localhost",
-                port="5432"
-            )
 
-            connection = conn.cursor()
             #Creem la taula de pokemons a la BD
 
 
@@ -29,15 +20,13 @@ if resposta == 'si':
             print(sql)
 
             #Enviar query
-            connection.execute(sql)
+            connection.connection.execute(sql)
 
             #Commit per a fer els canvis
-            conn.commit()
+            connection.conn.commit()
 
     except (Exception,psycopg2.Error) as error:
         print("Error", error)
     finally:
-        conn.close()
+        connection.conn.close()
 
-else:
-    print('No has volgut crear la taula')
