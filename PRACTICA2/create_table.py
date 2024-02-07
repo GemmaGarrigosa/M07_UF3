@@ -3,30 +3,24 @@ import psycopg2
 import connection
 
 def crear_taula():
-    try:
 
-            #Creem la taula de pokemons a la BD
+        #Creem la taula de pokemons a la BD
 
 
-            sql = '''CREATE TABLE POKEMON(
-                            pokemon_id SERIAL PRIMARY KEY,
-                            pokemon_name VARCHAR(255) NOT NULL,
-                            pokemon_type1 VARCHAR(255) NOT NULL,
-                            pokemon_type2 VARCHAR(255),
-                            pokemon_weight FLOAT NOT NULL,
-                            pokemon_height FLOAT NOT NULL               
-            )'''
+        sql = '''CREATE TABLE POKEMON(
+                        pokemon_id SERIAL PRIMARY KEY,
+                        pokemon_name VARCHAR(255) NOT NULL,
+                        pokemon_type1 VARCHAR(255) NOT NULL,
+                        pokemon_type2 VARCHAR(255),
+                        pokemon_weight FLOAT NOT NULL,
+                        pokemon_height FLOAT NOT NULL               
+        )'''
 
-            print(sql)
+        print(sql)
 
-            #Enviar query
-            connection.connection.execute(sql)
+        #Enviar query
+        connection.connection.execute(sql)
 
-            #Commit per a fer els canvis
-            connection.conn.commit()
-
-    except (Exception,psycopg2.Error) as error:
-        print("Error", error)
-    finally:
-        connection.conn.close()
+        #Commit per a fer els canvis
+        connection.conn.commit()
 
