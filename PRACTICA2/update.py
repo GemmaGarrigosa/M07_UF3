@@ -6,5 +6,5 @@ def actualitza_pokemon():
 
     print(sql)
 
-    connection.connection.execute(sql)
-    connection.conn.commit()
+    connection.connection.execute(sql) #Executem la query
+    connection.conn.commit() #Guardem els canvis

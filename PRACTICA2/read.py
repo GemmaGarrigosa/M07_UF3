@@ -7,9 +7,8 @@ def llegir_taula():
     print(sql)
 
     connection.connection.execute(sql)
-    dades = connection.connection.fetchall()
+    dades = connection.connection.fetchall() #guardem en una tupla les dades obtingudes de la query
 
-    for dada in dades :
+    for dada in dades : #les mostrem una a una en un print
         print (f'Pokemon: {dada} \n')
 
-    connection.conn.commit()
