@@ -1,6 +1,6 @@
 import psycopg2
 
-
+#Credencials per connectar-se al servidor
 conn = psycopg2.connect(
     database = "practica2",
     user = "gemma",
