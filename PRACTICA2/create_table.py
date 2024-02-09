@@ -11,7 +11,7 @@ def crear_taula():
                         pokemon_id SERIAL PRIMARY KEY,
                         pokemon_name VARCHAR(255) NOT NULL,
                         pokemon_type1 VARCHAR(255) NOT NULL,
-                        pokemon_type2 VARCHAR(255),
+                        pokemon_type2 VARCHAR(255) NOT NULL,
                         pokemon_weight FLOAT NOT NULL,
                         pokemon_height FLOAT NOT NULL               
         )'''
